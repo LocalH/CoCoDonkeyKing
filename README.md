@@ -15,6 +15,11 @@ I welcome any pull requests from more experienced CoCo coders. If Chris Latham h
 
 Binary disassembled with f9dasm using the crafted .info file that is present in the repo. If you add any labels or code/data definitions, please add them to the .info so that the f9disasm output is the best possible starting point. If you edit the .asm directly, please note your changes in a separate document or in a detailed commit message. I'm marking this as MIT license out of convenience. For any of the executables found in the repo, please visit their repo to determine their license. I have not modified any of them, so the source is available in those repos.
 
+## f9dasm command line
+The current command line I've been using to generate the .asm from the .bin is the following:
+
+```f9dasm -cchar * -info donkey.info -out donkymod.asm```
+
 ## Important files
 * donkymod.asm - the current state of the disassembly, as of now direct output from f9dasm
 * donkey.dsk - the disk image with the game on it, as used in a CoCo emulator or written to a disk
