@@ -1,4 +1,4 @@
-# Donkey King (Color Computer) Disassembly
+# Donkey King/The King (Color Computer) Disassembly
 
 This is sloppy as shit. My eventual goal is to understand this game enough to make a few modifications to it, in order to make it play a bit closer to the arcade version. However, I honestly know virtually nothing about 6809 development, nor the CoCo itself (I have multiple browser tabs open to modern and historical CoCo documentation). But damn it, this is *fun*.
 
@@ -27,7 +27,7 @@ The current command line I've been using to generate the .asm from the .bin is t
 * donkey-memmap.txt - a basic memory map of the game
 * donkey.info - the file that gives f9dasm hints about labels and code/data separation
 * donkey.mem - this *should* be a RAM dump of an emulator running the game. The text and graphics buffers seem to line up, but the entry point seems to be 0x20 bytes off, no idea what's up there.
-* donkey.raw - the game file extracted from the disk image, with preamble and postabmle stripped
+* donkey.raw - the game file extracted from the disk image, with preamble and postamble stripped
 * theking.dsk - a copy of the game after the name was changed from "Donkey King" to "The King"
 * lwar.exe, lwasm.exe, lwcc-cpp.exe, lwlink.exe, lwobjdump.exe - files generated from the [LWTOOLS](http://www.lwtools.ca) project
 * ar2.exe, cecb.exe, decb.exe, makewav.exe, mamou.exe, os9.exe, and tocgen.exe - files generated from the [ToolShed](https://github.com/n6il/toolshed) project
