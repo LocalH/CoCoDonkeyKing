@@ -31,5 +31,5 @@ The current command line I've been using to generate the .asm from the .bin is t
 * theking.dsk - a copy of the game after the name was changed from "Donkey King" to "The King"
 * lwar.exe, lwasm.exe, lwcc-cpp.exe, lwlink.exe, lwobjdump.exe - files generated from the [LWTOOLS](http://www.lwtools.ca) project
 * ar2.exe, cecb.exe, decb.exe, makewav.exe, mamou.exe, os9.exe, and tocgen.exe - files generated from the [ToolShed](https://github.com/n6il/toolshed) project
-* bin2mot.exe, mot2bin.exe - tools for going between binry and Motorola S-Record files, if it becomes handy
+* bin2mot.exe, mot2bin.exe - tools for going between binary and Motorola S-Record files, if it becomes handy
 * f9dasm.exe - the actual disassembler, from the [f9dasm](https://github.com/Arakula/f9dasm) project
