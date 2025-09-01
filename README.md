@@ -16,6 +16,7 @@ I welcome any pull requests from more experienced CoCo coders. If Chris Latham h
 Binary disassembled with f9dasm using the crafted .info file that is present in the repo. If you add any labels or code/data definitions, please add them to the .info so that the f9disasm output is the best possible starting point. If you edit the .asm directly, please note your changes in a separate document or in a detailed commit message. I'm marking this as MIT license out of convenience. For any of the executables found in the repo, please visit their repo to determine their license. I have not modified any of them, so the source is available in those repos.
 
 ## Important files
+* donkymod.asm - the current state of the disassembly, as of now direct output from f9dasm
 * donkey.dsk - the disk image with the game on it, as used in a CoCo emulator or written to a disk
 * donkey.bin - the extracted file, with LOADM/CLOADM preamble and postamble
 * donkey-memmap.txt - a basic memory map of the game
@@ -26,3 +27,4 @@ Binary disassembled with f9dasm using the crafted .info file that is present in 
 * lwar.exe, lwasm.exe, lwcc-cpp.exe, lwlink.exe, lwobjdump.exe - files generated from the [LWTOOLS](http://www.lwtools.ca) project
 * ar2.exe, cecb.exe, decb.exe, makewav.exe, mamou.exe, os9.exe, and tocgen.exe - files generated from the [ToolShed](https://github.com/n6il/toolshed) project
 * bin2mot.exe, mot2bin.exe - tools for going between binry and Motorola S-Record files, if it becomes handy
+* f9dasm.exe - the actual disassembler, from the [f9dasm](https://github.com/Arakula/f9dasm) project
