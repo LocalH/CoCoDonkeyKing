@@ -1,0 +1,19 @@
+Donkey King Memory Map
+----------------------
+
+0000-0070 - cleared during initialization
+0072-01FF - general variables/game state
+0200-19FF - graphics screen
+1A00-1BFF - text screen, when used
+1A00-31FF - buffer, during game
+3200-3202 - unknown
+3203-61F7 - code area
+61F8-7F05 - data area
+
+Variables
+---------
+0190 - 1 if practice game, 0 if not
+0191 - current player (0=P1, 1=P2)
+0192 - number of players (I *think* 1 is 1 and 2 is 2)
+01a1 - player 1 lives count
+01a2 - player 2 lives count

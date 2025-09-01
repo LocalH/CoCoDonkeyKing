@@ -1,0 +1,322 @@
+*donkey.bin code/data ranges
+FILE donkey.bin 31fe
+OPTION begin 3203
+OPTION nofcc
+
+*early memory
+LABEL 0072 WarmStartVector
+LABEL 0200 GfxBuffer1
+LABEL 1A00 GfxBuffer2OrText
+
+CODE 3203-338a
+DATA 3358-335f
+CODE 3360-338a
+
+*"NUMBER OF PLAYERS (1 OR 2)"
+DATA 338b-33a5
+CHAR 338c-33a5
+LABEL 338c StrNumPlayers
+
+CODE 33a6-33c4
+
+*"PRACTICE GAME (Y OR N)"
+DATA 33c5-33db
+CHAR 33c6-33db
+LABEL 33c6 StrPracticeGame
+
+CODE 33dc-3491
+
+*"TOM MIX SOFTWARE"
+CHAR 3492-34a1
+LABEL 3492 StrTomMix
+
+CODE 34a2-34a4
+
+*"PRESENTS...."
+DATA 34a5-34b1
+CHAR 34a6-34b1
+LABEL 34a6 StrPresents
+
+CODE 34b2-34df
+
+*" COLOR COMPUTER "
+DATA 34e0-34f0
+CHAR 34e1-34f0
+LABEL 34e1 StrCoprCoCo
+
+CODE 34f1-34f4
+
+*" DONKEY KING IS "
+CHAR 34f5-3504
+LABEL 34f5 StrCoprDKIs
+
+CODE 3505-3508
+
+*" COPYRIGHT  (C) "
+CHAR 3509-3518
+LABEL 3509 StrCoprCopyright
+
+CODE 3519-351c
+
+*"     1982 BY    "
+CHAR 351d-352c
+LABEL 351d StrCopy1982By
+
+CODE 352d-3530
+
+*"TOM MIX SOFTWARE"
+CHAR 3531-3540
+LABEL 3531 StrCoprTomMix
+
+CODE 3541-3544
+
+*"AND CHRIS LATHAM"
+CHAR 3545-3554
+LABEL 3545 StrCoprChris
+
+CODE 3555-3557
+
+*"IT'S ILLEGAL TO "
+DATA 3558-3568
+CHAR 3559-3568
+LABEL 3559 StrCoprIllegal
+
+CODE 3569-356c
+
+*"SELL OR GIVE THE"
+CHAR 356d-357c
+LABEL 356d StrCoprSellGive
+
+CODE 357d-3580
+
+*"PROGRAM AWAY. SO"
+CHAR 3581-3590
+LABEL 3581 StrCoprProgram
+
+CODE 3591-3594
+
+*"DON'T BE A CROOK"
+CHAR 3595-35a4
+LABEL 3595 StrCoprNoCrook
+
+CODE 35a5-35a8
+
+*"DON'T RIP US OFF"
+CHAR 35a9-35b8
+LABEL 35a9 StrCoprNoRipoff
+
+CODE 35b9-364b
+
+*hiscore entry 1 (A-H)
+DATA 364c-365b
+CHAR 364d-365b
+LABEL 364d StrHiEntry1
+
+CODE 365c-365e
+
+*hiscore entry 2 (I-P)
+DATA 365f-366e
+CHAR 3660-366e
+LABEL 3660 StrHiEntry2
+
+CODE 366f-3671
+
+*hiscore entry 3 (Q-X)
+DATA 3672-3681
+CHAR 3673-3681
+LABEL 3673 StrHiEntry3
+
+CODE 3682-3684
+
+*hiscore entry 4 (Y-Z,RUB,END)
+DATA 3685-3694
+CHAR 3686-3694
+LABEL 3686 StrHiEntry4
+
+CODE 3695-369f
+
+*"PLAYER" text
+DATA 36a0-36a6
+CHAR 36a1-36a6
+LABEL 36a1 StrPlayer
+
+CODE 36a7-39d6
+
+*"HIGH  SCORES" title
+CHAR 39d7-39e2
+LABEL 39d7 StrHiScoreTitle
+
+CODE 39e3-39ea
+
+DATA 39eb-3a3a
+
+*"1ST"
+DATA 39ef-39f2
+CHAR 39ef-39f2
+LABEL 39ef StrHiScore1st
+
+*"2ND"
+DATA 39f7-39fa
+CHAR 39f7-39fa
+LABEL 39f7 StrHiScore2nd
+
+*"3RD"
+DATA 39ff-3a02
+CHAR 39ff-3a02
+LABEL 39ff StrHiScore3rd
+
+*"4TH"
+DATA 3a07-3a0a
+CHAR 3a07-3a0a
+LABEL 3a07 StrHiScore4th
+
+*"5TH"
+DATA 3a0f-3a12
+CHAR 3a0f-3a12
+LABEL 3a0f StrHiScore5th
+
+*"6TH"
+DATA 3a17-3a1a
+CHAR 3a17-3a1a
+LABEL 3a17 StrHiScore6th
+
+*"7TH"
+DATA 3a1f-3a22
+CHAR 3a1f-3a22
+LABEL 3a1f StrHiScore7th
+
+*"8TH"
+DATA 3a27-3a2a
+CHAR 3a27-3a2a
+LABEL 3a27 StrHiScore8th
+
+*"9TH"
+DATA 3a2f-3a32
+CHAR 3a2f-3a32
+LABEL 3a2f StrHiScore9th
+
+*"10TH"
+DATA 3a37-3a3a
+CHAR 3a37-3a3a
+LABEL 3a37 StrHiScore10th
+
+CODE 3a3b-61f7
+
+*graphics data block
+DATA 61f8-7f05
+
+*hiscore 1 (TOM M)
+CHAR 7b92-7b96
+LABEL 7b92 StrHi1
+LABEL 7b97 BCDHi1
+
+*hiscore 2 (KEN C)
+CHAR 7b9b-7b9f
+LABEL 7b9b StrHi2
+LABEL 7ba0 BCDHi2
+
+*hiscore 3 (JIM P)
+CHAR 7ba4-7ba8
+LABEL 7ba4 StrHi3
+LABEL 7ba9 BCDHi3
+
+*hiscore 4 (G.MIX)
+CHAR 7bad-7bb1
+LABEL 7bad StrHi4
+LABEL 7bb2 BCDHi4
+
+*hiscore 5 (PAUL )
+CHAR 7bb6-7bba
+LABEL 7bb6 StrHi5
+LABEL 7bbb BCDHi5
+
+*hiscore 6 (G.W.L)
+CHAR 7bbf-7bc3
+LABEL 7bbf StrHi6
+LABEL 7bc4 BCDHi6
+
+*hiscore 7 (RON B)
+CHAR 7bc8-7bcc
+LABEL 7bc8 StrHi7
+LABEL 7bcd BCDHi7
+
+*hiscore 8 (LANCE)
+CHAR 7bd1-7bd5
+LABEL 7bd1 StrHi8
+LABEL 7bd6 BCDHi9
+
+*hiscore 9 (MIKE )
+CHAR 7bda-7bde
+LABEL 7bda StrHi9
+LABEL 7bdf BCDHi9
+
+*hiscore 10 (CHRIS)
+CHAR 7be3-7be7
+LABEL 7be3 StrHi10
+LABEL 7be8 BCDHi10
+
+*already known labels
+
+*vars/constants
+LABEL 0190 FlagNotPrac
+LABEL 0191 CurPlayer
+LABEL 0192 NumPlayers
+LABEL 01a1 NumP1Lives
+LABEL 01a2 NumP2Lives
+
+*routines
+LABEL 322c RedCheckLoop
+LABEL 3271 SetupNormalLives
+LABEL 3281 StartTurn1
+LABEL 3282 StartTurnA
+LABEL 3297 EndP1Turn
+LABEL 32ba EndP2Turn
+LABEL 32ab P1HasNoLives
+LABEL 32c6 CheckPractice
+LABEL 32ce NotPractice
+LABEL 3360 ClearRAMto0070
+LABEL 3380 AskNumPlayers
+LABEL 33bd AskPracticeGame
+LABEL 33eb SetPracticeFlag
+LABEL 33ef SetupPractice
+LABEL 33f3 SetSAMGfx
+LABEL 3400 SetSAMText
+LABEL 340d SetVDGGfx
+LABEL 341c SetVDGText
+LABEL 342b ClearBuffer
+LABEL 3438 ClearGfxScreen
+LABEL 3445 ClearTextScreen
+LABEL 3455 FillGfxForRedCheck
+LABEL 3486 TitleScreen
+LABEL 35c5 PrintText
+
+*rom routines
+LABEL A000 POLCAT
+LABEL A00A JOYIN
+
+*I/O
+LABEL ff00 PIA0DataA
+LABEL ff20 PIA1DataA
+LABEL ff22 VDGDataB
+LABEL ff23 VDGContB
+LABEL ff40 DiskIO
+LABEL ffc0 SAMV0CLR
+*V0SET not used? added anyway
+LABEL ffc1 SAMV0SET
+LABEL ffc2 SAMV1CLR
+LABEL ffc3 SAMV1SET
+LABEL ffc4 SAMV2CLR
+LABEL ffc5 SAMV2SET
+*F0CLR not used? added anyway
+LABEL ffc6 SAMF0CLR
+LABEL ffc7 SAMF0SET
+LABEL ffc8 SAMF1CLR
+*F1SET not used? added anyway
+LABEL ffc9 SAMF1SET
+LABEL ffca SAMF2CLR
+LABEL ffcb SAMF2SET
+LABEL ffcc SAMF3CLR
+LABEL ffcd SAMF3SET
+
+*workarounds for broken immediate mode labeling
+LABEL E800 $E800
