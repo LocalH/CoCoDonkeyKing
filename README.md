@@ -7,7 +7,7 @@ This is sloppy as shit. My eventual goal is to understand this game enough to ma
 * Barrel and fireball behavior is completely inaccurate
 
 ## Things I'm not worried about
-* The flicker. This game, from my analysis so far, seems to have two graphics buffers (the one that isn't displayed seems to overlap with the text screen, since they're not used at the same time, perhaps it's only used to store the blank level without objects). AFAIK Sailor Man, which Latham developed after this game, was *triple* buffered.``
+* The flicker. This game, from my analysis so far, seems to have two graphics buffers (the one that isn't displayed seems to overlap with the text screen, since they're not used at the same time, perhaps it's only used to store the blank level without objects). AFAIK Sailor Man, which Latham developed after this game, was *triple* buffered.
 * The speed oscillation. 6809 is a new processor for me, I understand this is just due to processing multiple objects and updating either the offscreen buffer or the main one, and it's less advanced than Sailor Man.
 * Bonus scoring. I kind of like that the hammer/jump/rivet/item bonuses track the hundreds digit of the timer, as it adds additional skill for point chasers. There *is* a difference between items and everything else, when the hundreds digit is 0 I believe that the items give 500 but hammer destroys and jumps only give you 100.
 
