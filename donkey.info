@@ -140,15 +140,18 @@ DATA 36a0-36a6
 CHAR 36a1-36a6
 LABEL 36a1 StrPlayer
 
-CODE 36a7-39d6
+CODE 36a7-39bb
+DATA 38bc-38d3
+CODE 38d4-39d5
+DATA 39d6
 
 *"HIGH  SCORES" title
 CHAR 39d7-39e2
 LABEL 39d7 StrHiScoreTitle
 
-CODE 39e3-39ea
+CODE 39e3-39ed
 
-DATA 39eb-3a3a
+DATA 39ee-3a3a
 
 *"1ST"
 DATA 39ef-39f2
@@ -266,6 +269,7 @@ LABEL 01a2 NumP2Lives
 
 *routines
 LABEL 322c RedCheckLoop
+LABEL 323b StartGame
 LABEL 3271 SetupNormalLives
 LABEL 3281 StartTurn1
 LABEL 3282 StartTurnA
@@ -275,20 +279,23 @@ LABEL 32ab P1HasNoLives
 LABEL 32c6 CheckPractice
 LABEL 32ce NotPractice
 LABEL 3360 ClearRAMto0070
+LABEL 336f ClearRAM013Cto018F
 LABEL 3380 AskNumPlayers
 LABEL 33bd AskPracticeGame
 LABEL 33eb SetPracticeFlag
-LABEL 33ef SetupPractice
+LABEL 33ef EnablePractice
 LABEL 33f3 SetSAMGfx
 LABEL 3400 SetSAMText
 LABEL 340d SetVDGGfx
 LABEL 341c SetVDGText
-LABEL 342b ClearBuffer
-LABEL 3438 ClearGfxScreen
+LABEL 342b ClearBuffer2
+LABEL 3438 ClearBuffer1
 LABEL 3445 ClearTextScreen
 LABEL 3455 FillGfxForRedCheck
 LABEL 3486 TitleScreen
 LABEL 35c5 PrintText
+LABEL 35cb TextLength
+LABEL 3c53 CopyBuffer1To2
 
 *rom routines
 LABEL A000 POLCAT

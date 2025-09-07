@@ -3,7 +3,7 @@ Donkey King Memory Map
 
 0000-0070 - cleared during initialization
 0072-01FF - general variables/game state
-0200-19FF - graphics screen
+0200-19FF - graphics screen that SAM displays
 1A00-1BFF - text screen, when used
 1A00-31FF - buffer, during game
 3200-3202 - unknown
